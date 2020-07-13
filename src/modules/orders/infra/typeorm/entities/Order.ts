@@ -24,9 +24,6 @@ class Order {
   @OneToMany(() => OrdersProducts, order => order.order, { cascade: true, eager: true })
   order_products: OrdersProducts[];
 
-  @Column()
-  costumer_id: string;
-
   @CreateDateColumn()
   created_at: Date;
 
