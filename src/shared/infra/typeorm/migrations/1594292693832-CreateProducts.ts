@@ -1,7 +1,4 @@
 import {MigrationInterface, QueryRunner, Table} from "typeorm";
-
-
-
 export default class CreateProducts1594292693832 implements MigrationInterface {
 
     public async up(queryRunner: QueryRunner): Promise<any> {

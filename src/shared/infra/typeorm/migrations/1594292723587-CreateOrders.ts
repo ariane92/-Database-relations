@@ -15,7 +15,7 @@ export default class CreateOrders1594292723587 implements MigrationInterface {
           },
 
           {
-            name: 'costumer_id',
+            name: 'customer_id',
             type: 'uuid',
           },
 
@@ -35,9 +35,9 @@ export default class CreateOrders1594292723587 implements MigrationInterface {
         foreignKeys: [
           {
             name: 'foreignKeysCostumer',
-            referencedTableName: 'costumers',
+            referencedTableName: 'customers',
             referencedColumnNames: ['id'],
-            columnNames: ['costumer_id'],
+            columnNames: ['customer_id'],
             onDelete: 'CASCADE',
             onUpdate: 'CASCADE',
           },
